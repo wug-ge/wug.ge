@@ -1,0 +1,19 @@
+version: '3.2'
+
+services:
+  web:
+    image: wugge/wug.ge
+    container_name: wugge
+    restart: "unless-stopped"
+    expose:
+      - 80
+    ports:
+      - 8123:80
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.wugge.rule=Host(`wug.ge`)"
+networks:
+  default:
+    external:
+      name:
+        traefik_default

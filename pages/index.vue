@@ -3,7 +3,7 @@
     <navigation />
     <page-header />
     <tech-stack />
-    <imprint />
+    <page-footer />
   </div>
 </template>
 
@@ -13,14 +13,14 @@ import { Component, Vue } from 'nuxt-property-decorator'
 import Navigation from '@/components/main-page-components/Navigation.vue'
 import PageHeader from '@/components/main-page-components/PageHeader.vue'
 import TechStack from '@/components/main-page-components/TechStack.vue'
-import Imprint from '@/components/main-page-components/Imprint.vue'
+import PageFooter from '~/components/main-page-components/PageFooter.vue'
 
 @Component({
   components: {
     Navigation,
     PageHeader,
     TechStack,
-    Imprint
+    PageFooter
   }
 })
 export default class Index extends Vue {

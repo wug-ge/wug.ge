@@ -1,0 +1,23 @@
+kind: pipeline
+name: default
+
+steps:
+- name: build
+  image: node:16
+  commands:
+  - npm install
+  - npm run build
+- name: publish
+  image: plugins/docker
+  settings:
+    repo: wugge/wug.ge
+    tags: [ "${DRONE_COMMIT_SHA:0:7}","latest" ]
+    username:
+      from_secret: docker_username
+    password:
+      from_secret: docker_password
+#depends_on:
+#  - build
+#- name: deploy
+#  image: wugge/wug.ge
+#  depends_on: build
