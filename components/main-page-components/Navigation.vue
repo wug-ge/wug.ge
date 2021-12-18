@@ -53,6 +53,19 @@
               mr-4
             "
           >
+            Projects
+          </a>
+          <a
+            href="#responsive-header"
+            class="
+              block
+              mt-4
+              lg:inline-block lg:mt-0
+              text-teal-lighter
+              hover:text-white
+              mr-4
+            "
+          >
             About me
           </a>
           <a
