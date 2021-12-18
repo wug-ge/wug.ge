@@ -1,7 +1,7 @@
 <template>
-  <div class="bg-primary text-secondary text-center p-10">
+  <div class="bg-primary text-secondary p-10">
     <h1 class="md:text-2xl text-xl">Imprint</h1>
-    Daniel Wuggenig<br>
+    Ing. Daniel Wuggenig<br>
     Gnoppnitz 7<br>
     9761 Greifenburg<br>
     wug.ge<br>
