@@ -5,6 +5,7 @@
       </div>
       <div class="block lg:hidden">
         <button
+          @click="showResponsiveMenu = !showResponsiveMenu"
           class="
             flex
             items-center
@@ -26,7 +27,7 @@
           </svg>
         </button>
       </div>
-      <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+      <div v-if="showResponsiveMenu" class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
         <div class="text-sm lg:flex-grow">
           <a
             href="#responsive-header"
@@ -102,6 +103,7 @@ import Logo from '@/components/Logo.vue'
   }
 })
 export default class Navigation extends Vue {
+  showResponsiveMenu = false
   
 }
 </script>
