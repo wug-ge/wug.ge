@@ -124,7 +124,7 @@ export default class Navigation extends Vue {
 
   mounted () {
     if (process.client) {
-      window.addEventListener('resize', this.checkIsWindowLarge)
+      window.addEventListener('resize', this.checkIsWindowMedium)
       this.checkIsWindowMedium()
     }
   }
