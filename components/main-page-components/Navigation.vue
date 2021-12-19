@@ -68,8 +68,9 @@
           >
             About me
           </a>
-          <a
-            href="#responsive-header"
+          <router-link
+            to="/blog"
+            href=""
             class="
               block
               mt-4
@@ -79,7 +80,7 @@
             "
           >
             Blog
-          </a>
+          </router-link>
         </div>
         <div>
           <a
