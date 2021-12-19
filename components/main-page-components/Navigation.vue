@@ -1,9 +1,11 @@
 <template>
     <nav class="bg-primary border-b flex items-center justify-between flex-wrap bg-teal p-6 text-secondary">
       <div class="flex items-center flex-no-shrink mr-6">
-        <logo></logo>
+        <nuxt-link to="/">
+          <logo></logo>
+        </nuxt-link>
       </div>
-      <div class="block lg:hidden">
+      <div class="block md:hidden">
         <button
           @click="showResponsiveMenu = !showResponsiveMenu"
           class="
@@ -27,14 +29,14 @@
           </svg>
         </button>
       </div>
-      <div v-if="showResponsiveMenu || isLarge" class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-        <div class="text-sm lg:flex-grow">
+      <div v-if="showResponsiveMenu || isMedium" class="w-full block flex-grow md:flex md:items-center md:w-auto">
+        <div class="text-sm md:flex-grow">
           <a
             href="#responsive-header"
             class="
               block
               mt-4
-              lg:inline-block lg:mt-0
+              md:inline-block md:mt-0
               text-teal-lighter
               hover:text-white
               mr-4
@@ -47,7 +49,7 @@
             class="
               block
               mt-4
-              lg:inline-block lg:mt-0
+              md:inline-block md:mt-0
               text-teal-lighter
               hover:text-white
               mr-4
@@ -60,7 +62,7 @@
             class="
               block
               mt-4
-              lg:inline-block lg:mt-0
+              md:inline-block md:mt-0
               text-teal-lighter
               hover:text-white
               mr-4
@@ -68,19 +70,19 @@
           >
             About me
           </a>
-          <router-link
+          <nuxt-link
             to="/blog"
             href=""
             class="
               block
               mt-4
-              lg:inline-block lg:mt-0
+              md:inline-block md:mt-0
               text-teal-lighter
               hover:text-white
             "
           >
             Blog
-          </router-link>
+          </nuxt-link>
         </div>
         <div>
           <a
@@ -97,7 +99,7 @@
               border-white
               hover:border-transparent hover:text-teal hover:bg-white
               mt-4
-              lg:mt-0
+              md:mt-0
             "
             >Contact</a
           >
@@ -118,17 +120,17 @@ import Logo from '@/components/Logo.vue'
 })
 export default class Navigation extends Vue {
   showResponsiveMenu = false
-  isLarge = true
+  isMedium = true
 
   mounted () {
     if (process.client) {
       window.addEventListener('resize', this.checkIsWindowLarge)
-      this.checkIsWindowLarge()
+      this.checkIsWindowMedium()
     }
   }
 
-  checkIsWindowLarge() {
-    this.isLarge = window.outerWidth >= 1024
+  checkIsWindowMedium() {
+    this.isMedium = window.outerWidth >= 768
   }
   
 }
