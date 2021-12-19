@@ -3,10 +3,10 @@
     <navigation />
     <page-header />
     <blog-content>
-      <div class="p-10" v-for="(doc, i) in docs" :key="i">
-        <router-link :to="`/blog/${doc.slug}`">
-          <nuxt-content :document="doc" />
-        </router-link>
+      <div class="container p-10" v-for="(doc, i) in docs" :key="i">
+        <nuxt-link :to="`/blog/${doc.slug}`">
+          {{doc.title}} {{ doc.description }} asdf
+        </nuxt-link>
       </div>
     </blog-content>
     <page-footer />
