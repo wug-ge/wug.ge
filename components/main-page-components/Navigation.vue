@@ -27,7 +27,7 @@
           </svg>
         </button>
       </div>
-      <div v-if="showResponsiveMenu" class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+      <div v-if="showResponsiveMenu || isLarge" class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
         <div class="text-sm lg:flex-grow">
           <a
             href="#responsive-header"
@@ -117,6 +117,18 @@ import Logo from '@/components/Logo.vue'
 })
 export default class Navigation extends Vue {
   showResponsiveMenu = false
+  isLarge = true
+
+  mounted () {
+    if (process.client) {
+      window.addEventListener('resize', this.checkIsWindowLarge)
+      this.checkIsWindowLarge()
+    }
+  }
+
+  checkIsWindowLarge() {
+    this.isLarge = window.outerWidth >= 1024
+  }
   
 }
 </script>
