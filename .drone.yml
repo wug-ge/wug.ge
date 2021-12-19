@@ -16,8 +16,14 @@ steps:
       from_secret: docker_username
     password:
       from_secret: docker_password
-#depends_on:
-#  - build
-#- name: deploy
-#  image: wugge/wug.ge
-#  depends_on: build
+- name: deploy
+  image: docker/compose
+  volumes:
+  - name: docker_sock
+    path: /var/run/docker.sock
+  commands:
+  - docker-compose -f docker-compose.prod.yml up -d
+volumes:
+  - name: docker_sock
+    host:
+      path: /var/run/docker.sock

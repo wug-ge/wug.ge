@@ -6,12 +6,11 @@ services:
     container_name: wugge
     restart: "unless-stopped"
     expose:
-      - 80
-    ports:
-      - 8123:80
+      - 3000
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.wugge.rule=Host(`wug.ge`)"
+      - "traefik.http.services.wugge.loadbalancer.server.port=3000"
 networks:
   default:
     external:
