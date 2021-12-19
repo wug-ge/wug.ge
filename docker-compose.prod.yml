@@ -2,7 +2,7 @@ version: '3.2'
 
 services:
   web:
-    image: wugge/wug.ge
+    image: wugge/wug.ge:latest
     container_name: wugge
     restart: "unless-stopped"
     expose:
