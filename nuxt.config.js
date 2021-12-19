@@ -39,7 +39,7 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     '@nuxt/content',
-    ['nuxt-matomo', { matomoUrl: '//matomo.wug.ge', siteId: 1}]
+    ['nuxt-matomo', { matomoUrl: '//matomo.wug.ge/', siteId: 1}]
   ],
   content: {
 
