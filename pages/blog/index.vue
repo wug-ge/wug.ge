@@ -3,7 +3,11 @@
     <navigation />
     <page-header />
     <blog-content>
-      <nuxt-content :document="doc" />
+      <div class="p-10" v-for="(doc, i) in docs" :key="i">
+        <router-link :to="`/blog/${doc.slug}`">
+          <nuxt-content :document="doc" />
+        </router-link>
+      </div>
     </blog-content>
     <page-footer />
   </div>
@@ -26,8 +30,8 @@ import PageFooter from '~/components/main-page-components/PageFooter.vue'
     BlogContent
   },
   async asyncData({ $content, params }) {
-    const doc = await $content(params.slug || 'blog/index').fetch()
-    return { doc }
+    const docs = await $content(params.slug || 'blog').fetch()
+    return { docs }
   }
 })
 export default class Blog extends Vue {
