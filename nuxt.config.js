@@ -49,7 +49,7 @@ export default {
   },
 
   sitemap: {
-    hostname: 'wug.ge',
+    hostname: 'https://wug.ge',
     routes() {
       return getRoutes();
     },
