@@ -1,3 +1,5 @@
+import getRoutes from "./lib/utils/getRoutes";
+
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
@@ -39,10 +41,18 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     '@nuxt/content',
-    ['nuxt-matomo', { matomoUrl: '//matomo.wug.ge/', siteId: 1}]
+    ['nuxt-matomo', { matomoUrl: '//matomo.wug.ge/', siteId: 1}],
+    '@nuxtjs/sitemap',
   ],
   content: {
 
+  },
+
+  sitemap: {
+    hostname: process.env.BASE_URL,
+    routes() {
+      return getRoutes();
+    },
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
