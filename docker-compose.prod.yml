@@ -11,7 +11,7 @@ services:
       - "traefik.enable=true"
       - "traefik.http.routers.wugge.rule=Host(`wug.ge`)"
       - "traefik.http.services.wugge.loadbalancer.server.port=3000"
-      - "traefik.http.middlewares.wugge.redirectregex.regex=^http://(?:www.)?wug.ge/(.*)"
+      - "traefik.http.middlewares.wugge.redirectregex.regex=^http://wug.ge/(.*)"
       - "traefik.http.middlewares.php-apache-www-https-redirect.redirectregex.replacement=https://wug.ge/$${1}"
 networks:
   default:
