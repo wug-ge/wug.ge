@@ -49,7 +49,7 @@ export default {
   },
 
   sitemap: {
-    hostname: process.env.BASE_URL,
+    hostname: 'wug.ge',
     routes() {
       return getRoutes();
     },
