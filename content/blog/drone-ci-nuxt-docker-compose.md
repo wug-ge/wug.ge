@@ -9,25 +9,38 @@ I assume you have a running Drone CI installation with a Docker runner.
 You can find the source code with an example project using this setup (actually it's this blog you are currently reading) here: <a href="https://github.com/wug-ge/wug.ge/">Wug.ge Github repo</a>
 <br>
 <br>
-Basically,it comes down to 3 simple steps:<br>
-<br>
-- Install node_modules & build the App
+Basically, it comes down to 2 simple steps:<br>
 
-```yml
-- name: build
-  image: node:16
-  commands:
-  - npm install
-  - npm run build
+<br>
+
+## Build Dockerfile & publish image
+
+The dockerfile takes care of building the app and running it with nuxt's start job:
+
+```docker
+FROM node:16
+
+WORKDIR /app
+
+COPY . .
+
+RUN npm install
+RUN npm run build
+RUN npm run generate
+
+ENV HOST 0.0.0.0
+EXPOSE 80
+
+CMD ["npm", "run", "start"]
 ```
 <br>
-- Build & publish Dockerfile
+Publish the built image on Dockerhub. Don't forget to put docker_username & docker_password as secrets in your Drone CI repo settings: 
 
 ```yml
 - name: publish
   image: plugins/docker
   settings:
-    repo: wugge/wug.ge
+    repo: "YOUR-DOCKERHUB-USER/YOUR-REPO"
     tags: [ "${DRONE_COMMIT_SHA:0:7}","latest" ]
     username:
       from_secret: docker_username
@@ -35,7 +48,8 @@ Basically,it comes down to 3 simple steps:<br>
       from_secret: docker_password
 ```
 <br>
-- deploy the app (stop, pull & up docker-compose)
+
+## deploy the app (stop, pull & up docker-compose)
 
 ```yml
 - name: deploy
@@ -51,3 +65,5 @@ volumes:
       path: /var/run/docker.sock
 ```
 
+Checkout this repo for full source code: <a href="https://github.com/wug-ge/wug.ge/">Wug.ge Github repo</a>
+And feel free to contact me for any questions!
