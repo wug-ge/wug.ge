@@ -12,5 +12,8 @@
   h1 {
     @apply text-4xl text-primary;
   }
+  h2 {
+    @apply text-xl;
+  }
 }
 </style>
