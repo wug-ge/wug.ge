@@ -1,8 +1,7 @@
 <template>
-  <header class="bg-primary">
-    <h1 class="text-secondary text-4xl md:text-9xl text-center pb-32 pt-32">🕸️-dev by Wugge</h1>
-    <span class="text-xl text-center text-secondary">(this is all WIP please don't take it serious yet lol)</span>
-    <canvas class="glslCanvas" data-fragment-url="/shaders/headerShader.frag"></canvas>
+  <header class="bg-accent-1">
+    <h1 class="text-primary text-5xl md:text-6xl text-center pb-32 pt-32">Hey, I'm Wugge and I write code</h1>
+    <!--<canvas class="glslCanvas" data-fragment-url="/shaders/headerShader.frag"></canvas>-->
   </header>
 </template>
 

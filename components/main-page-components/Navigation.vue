@@ -1,5 +1,5 @@
 <template>
-    <nav class="bg-primary border-b flex items-center justify-between flex-wrap bg-teal p-6 text-secondary">
+    <nav class="bg-accent-1 border-b flex items-center justify-between flex-wrap bg-teal p-6 text-primary">
       <div class="flex items-center flex-no-shrink mr-6">
         <nuxt-link to="/">
           <logo></logo>
@@ -31,21 +31,8 @@
       </div>
       <div v-if="showResponsiveMenu || isMedium" class="w-full block flex-grow md:flex md:items-center md:w-auto">
         <div class="text-sm md:flex-grow">
-          <a
-            href="#responsive-header"
-            class="
-              block
-              mt-4
-              md:inline-block md:mt-0
-              text-teal-lighter
-              hover:text-white
-              mr-4
-            "
-          >
-            Tech showcase
-          </a>
-          <a
-            href="#responsive-header"
+          <nuxt-link
+            to="/projects"
             class="
               block
               mt-4
@@ -56,20 +43,7 @@
             "
           >
             Projects
-          </a>
-          <a
-            href="#responsive-header"
-            class="
-              block
-              mt-4
-              md:inline-block md:mt-0
-              text-teal-lighter
-              hover:text-white
-              mr-4
-            "
-          >
-            About me
-          </a>
+          </nuxt-link>
           <nuxt-link
             to="/blog"
             href=""
