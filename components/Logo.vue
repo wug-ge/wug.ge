@@ -1,5 +1,5 @@
 <template>
-    <div class="text-secondary logo-container flex items-center align-middle border p-1">
+    <div class="text-primary logo-container flex items-center align-middle border p-1">
         <div class="text">
           {{ `[</>]` }}
         </div>

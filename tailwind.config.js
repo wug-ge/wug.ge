@@ -1,11 +1,11 @@
 module.exports = {
   theme: {
     colors: {
-      'primary': '#111114',
-      'secondary': '#712BC2',
-      'accent-1': '#646464',
-      'accent-2': '#7D7D7D',
-      'accent-3': '#969696',
+      'primary': '#FFFFFF',
+      'secondary': '#363C4C',
+      'accent-1': '#5577FF',
+      'accent-2': '#ffa255',
+      'accent-3': '#6F6D5C',
       'accent-4': '#AFAFAF'
     }
   }
