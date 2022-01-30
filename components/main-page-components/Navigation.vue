@@ -61,6 +61,7 @@
         <div>
           <a
             href="#"
+            @click="showContactModal = true"
             class="
               inline-block
               text-sm
@@ -77,6 +78,7 @@
             "
             >Contact</a
           >
+          <contact-modal v-if="showContactModal" @close="showContactModal = false" />
         </div>
       </div>
     </nav>
@@ -87,14 +89,19 @@ import { Component, Vue } from 'nuxt-property-decorator'
 
 import Logo from '@/components/Logo.vue'
 
+import ContactModal from '@/components/ContactModal.vue'
+
 @Component({
   components: {
+    ContactModal,
     Logo
   }
 })
 export default class Navigation extends Vue {
   showResponsiveMenu = false
   isMedium = true
+
+  showContactModal = false
 
   mounted () {
     if (process.client) {
