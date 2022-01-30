@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-primary text-secondary p-3.5">
+  <div class="bg-accent-1 text-primary p-3.5">
     <slot></slot>
   </div>
 </template>
