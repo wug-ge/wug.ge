@@ -4,7 +4,7 @@
       <h1 class="md:text-5xl text-3xl">My Tech Stack</h1>
       <br />
       <div class="container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        <card v-for="(tech, i) in techStack" :key="i" class="relative text-center">
+        <card v-for="(tech, i) in techStack" :key="i" class="relative text-center rounded">
           <img class="w-20 mx-auto bg-primary p-4 rounded" :src="tech.logo" :alt="tech.name" />
           <div class="text p-6">
             {{ tech.description }}

@@ -6,12 +6,12 @@
       <div class="md:flex justify-center items-center mx-auto gap-16">
         <div class="col-span-1">
           <img
-            class="w-64 mx-auto md:mb-0 mb-4"
+            class="w-64 mx-auto md:mb-0 mb-4 rounded"
             src="~/assets/img/profile.jpg"
             alt="Profile Picture" />
         </div>
         <div class="text-xl ml-6 md:w-4/12 md:mb-0 mb-4">
-I'm a fresh new freelancer &amp; digital nomad from Austria having just started in 2022. Still I have years (5+) of work experience in the industry as a Web Developer, &amp; Teamleader and Project Manager in the industry.</div>
+I'm a fresh new freelancer &amp; digital nomad from Austria having just started in 2022. Still I have years (5+) of work experience in the industry as a Web Developer, Teamleader &amp; Project Manager in the industry.</div>
       </div>
     </div>
   </div>
