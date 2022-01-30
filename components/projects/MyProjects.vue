@@ -32,7 +32,9 @@ import { Component, Vue } from 'nuxt-property-decorator'
 import Card from '@/components/Card.vue'
 
 @Component({
-  Card
+  components: {
+    Card
+  }
 })
 export default class MyProjects extends Vue {
 
