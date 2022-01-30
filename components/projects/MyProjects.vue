@@ -4,7 +4,7 @@
       <h1 class="md:text-5xl text-3xl">My Projects</h1>
       <br />
       <div class="container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        <card class="relative text-center">
+        <card class="relative text-center rounded">
           <img class="w-32 mx-auto bg-primary p-2 rounded" src="@/assets/img/website.png" alt="Picture of website" />
           <div class="text p-6">
             This website is open source! It's build using Nuxt.js, TypeScript, Tailwind CSS and Docker! Go check it out on <a href="https://github.com/wug-ge/wug.ge">Github!</a>

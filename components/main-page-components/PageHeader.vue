@@ -17,7 +17,7 @@ export default class PageHeader extends Vue {
 <style lang="scss" scoped>
 header {
   position: relative;
-  z-index: 100;
+  z-index: 30;
   h1 {
     position: relative;
     z-index: 75; 

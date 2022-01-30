@@ -8,7 +8,7 @@
       wug.ge<br>
       <button @click="emailClick">{{email ? '' : 'Show' }} E-Mail</button>{{email ? ': ' + email : ''}}
     </div>
-    <div class="social-media text-primary bg-primary absolute right-0 p-10">
+    <div class="social-media rounded text-primary bg-primary absolute right-0 p-10">
       <a class="w-10" href="https://github.com/wug-ge">
         <img class="w-10" :src="require('@/assets/logos/github.svg')" alt="Github" /> 
       </a>
