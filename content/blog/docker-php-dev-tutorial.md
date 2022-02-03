@@ -20,13 +20,13 @@ If you don't care, you can skip this section!
 
 While your current solution might offer some of this advantages already, it won't have all of them. This are some of the advantages Docker will give you:
 - Encapsulate different projects!
-    - Don't ever creae weird subfolders in a httpdocs root for different projects!
+    - Don't ever create weird subfolders in a httpdocs root for different projects!
     - Don't ever create another vhost and hosts entry on your host machine Just run different docker containers for each project locally and access them over different ports.
 - Run multiple PHP versions
-    - Even at the same time! Just change the version you want for your project in an .env file, restart/build your containers with one command an you got the version your heart desires!
+    - Even at the same time! Just change the version you want for your project in an .env file, restart/build your containers with one command and you got the version your heart desires!
 - No more weird logs or unknown things happening
     - Just run a single command and your containers are running, showing you the log live!
-    - It's in the terminal which might seem scary, but trust me, it's actual more easy then trying to figure out what a UI is doing or why it's showing something weird.
+    - It's in the terminal which might seem scary, but trust me, it's actual easier then trying to figure out what a UI is doing or why it's showing something weird.
 - Have a proper Linux environment
     - While you might not even know anything about Linux right now - Trust me you want your development environment to be in Linux. It's fine if you are using Windows or those apple thingies, having Linux will only have   advantages and you will rarely have to touch it.
 <br><br>
