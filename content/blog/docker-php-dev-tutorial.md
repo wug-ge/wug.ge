@@ -30,6 +30,7 @@ While your current solution might offer some of this advantages already, it won'
 - Have a proper Linux environment
     - While you might not even know anything about Linux right now - Trust me you want your development environment to be in Linux. It's fine if you are using Windows or those apple thingies, having Linux will only have   advantages and you will rarely have to touch it.
 <br><br>
+
 ## Install Docker & Docker Compose
 <br>
 I'm pretty sure you can figure this one out, you can download Docker:
@@ -38,13 +39,15 @@ I'm pretty sure you can figure this one out, you can download Docker:
 <br>
 Here comes a downside for Windows Users: Since Docker for Windows requires Hyper-V, you won't be able to use VirtualBox and Docker at the same time. You have to enable/disable Hyper-V an reboot your PC in order to use one of them. 
 <br>
-<b>Only if you are using Linux:</b> You'll have to install Docker Compose seperately, get it <a href="https://docs.docker.com/compose/install/" target="_blank" class="text-accent-1"">here</a>.
+<b>Only if you are using Linux:</b> You'll have to install Docker Compose seperately, get it <a href="https://docs.docker.com/compose/install/" target="_blank" class="text-accent-1">here</a>.
 <br>
 Make sure Docker is properly installed by opening a Command Prompt/Terminal and running:
 
 ```bash
 docker --version
 ```
+
+<br><br>
 
 ## Get your environment
 <br>
@@ -53,7 +56,7 @@ I prepared an environment for you <a href="https://github.com/wug-ge/php-apache-
 If you know about git, you know what you do. If you don't: no worries!
 
 Just click this link to download it: <a href="https://github.com/wug-ge/php-apache-mariadb-project-base/archive/refs/heads/main.zip" target="_blank" class="text-accent-1">Your super cool future dev environment</a>
-<br>
+<br><br>
 
 ## Configure your environment
 <br>
@@ -99,14 +102,17 @@ Database port: 3306
 
 If you are connecting from inside your PHP (not your local installed mysql client), your Database host will ALWAYS be "mysql", NOT "localhost".
 Also, your database port inside PHP will ALWAYS be 3306, no matter what you set in your .env file.
+<br><br>
 
 ## Stopping the environment
 <br>
 Just press Strg+C and that's it, the environment will stop.
+<br><br>
 
 ## I'm stuck at [insert pitfall], what do I do?
 <br>
 Contact me wherever you like, I might have forgotten about something and I'm very happy if this tutorial does actually help you.
+<br><br>
 
 ## I have other questions about the setup
 <br>

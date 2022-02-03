@@ -5,7 +5,7 @@
     <blog-content>
       <div class="container p-10" v-for="(doc, i) in docs" :key="i">
         <nuxt-link :to="`/blog/${doc.slug}`">
-          <h1 class="text-2xl">{{doc.title}}</h1>
+          <h1 class="text-xl">{{doc.title}}</h1>
           {{ doc.description }}
         </nuxt-link>
       </div>
@@ -40,3 +40,9 @@ export default class Blog extends Vue {
 }
 
 </script>
+
+<style lang="scss" scoped>
+h1 {
+  @apply text-4xl;
+}
+</style>
