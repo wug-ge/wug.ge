@@ -105,4 +105,13 @@ Also, your database port inside PHP will ALWAYS be 3306, no matter what you set 
 Just press Strg+C and that's it, the environment will stop.
 
 ## I'm stuck at [insert pitfall], what do I do?
+<br>
 Contact me wherever you like, I might have forgotten about something and I'm very happy if this tutorial does actually help you.
+
+## I have other questions about the setup
+<br>
+Want to know how to install PHP extensions? How to do a composer update?
+How to SSH into your Linux environment?
+
+Again: just contact me and I'll explain. I'm not sure til what level people will actually use this tutorial before they create their own.
+I'm very happy to add it to the tutorial, it's easy, trust me!
