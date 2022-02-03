@@ -5,7 +5,7 @@
     <blog-content>
       <div class="container p-10" v-for="(doc, i) in docs" :key="i">
         <nuxt-link :to="`/blog/${doc.slug}`">
-          <h1 class="text-xl">{{doc.title}}</h1>
+          <h1 class="list-heading">{{doc.title}}</h1>
           {{ doc.description }}
         </nuxt-link>
       </div>
@@ -32,7 +32,6 @@ import PageFooter from '~/components/main-page-components/PageFooter.vue'
   },
   async asyncData({ $content, params }) {
     let docs = await $content(params.slug || 'blog').fetch()
-    docs = docs.reverse()
     return { docs }
   }
 })
@@ -40,9 +39,3 @@ export default class Blog extends Vue {
 }
 
 </script>
-
-<style lang="scss" scoped>
-h1 {
-  @apply text-4xl;
-}
-</style>

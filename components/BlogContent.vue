@@ -13,7 +13,10 @@
     font-size: 1.25rem;
   }
   h1 {
-    @apply text-5xl text-primary;
+    @apply text-4xl text-primary;
+    &:not(.list-heading) {
+      @apply text-5xl text-primary;
+    }
   }
   h2 {
     @apply text-3xl;
