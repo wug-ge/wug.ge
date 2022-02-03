@@ -9,11 +9,25 @@
 
 <style lang="scss">
 .blog-content {
+  .nuxt-content {
+    font-size: 1.25rem;
+  }
   h1 {
-    @apply text-4xl text-primary;
+    @apply text-5xl text-primary;
   }
   h2 {
-    @apply text-xl;
+    @apply text-3xl;
+  }
+  ul {
+    list-style-type: square;
+    list-style-position: inside;
+    li {
+      ul {
+        li {
+          margin-left: 15px;
+        }
+      }
+    }
   }
 }
 </style>

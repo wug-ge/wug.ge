@@ -31,7 +31,8 @@ import PageFooter from '~/components/main-page-components/PageFooter.vue'
     BlogContent
   },
   async asyncData({ $content, params }) {
-    const docs = await $content(params.slug || 'blog').fetch()
+    let docs = await $content(params.slug || 'blog').fetch()
+    docs = docs.reverse()
     return { docs }
   }
 })
