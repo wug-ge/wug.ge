@@ -49,7 +49,7 @@ Publish the built image on Dockerhub. Don't forget to put docker_username & dock
 ```
 <br>
 
-## deploy the app (stop, pull & up docker-compose)
+## Deploy the app (stop, pull & up docker-compose)
 
 ```yml
 - name: deploy
