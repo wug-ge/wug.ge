@@ -10,6 +10,9 @@
 <style lang="scss">
 .blog-content {
   .nuxt-content {
+    a {
+      @apply text-accent-1 underline;
+    }
     font-size: 1.25rem;
   }
   h1 {

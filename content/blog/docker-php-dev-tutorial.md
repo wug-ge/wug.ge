@@ -34,12 +34,12 @@ While your current solution might offer some of this advantages already, it won'
 ## Install Docker & Docker Compose
 <br>
 I'm pretty sure you can figure this one out, you can download Docker:
-<a href="https://docs.docker.com/get-docker/" target="_blank" class="text-accent-1">Get Docker here!</a>
+<a href="https://docs.docker.com/get-docker/" target="_blank">Get Docker here!</a>
 (or in your package manager if you are using any)
 <br>
 Here comes a downside for Windows Users: Since Docker for Windows requires Hyper-V, you won't be able to use VirtualBox and Docker at the same time. You have to enable/disable Hyper-V an reboot your PC in order to use one of them. 
 <br>
-<b>Only if you are using Linux:</b> You'll have to install Docker Compose seperately, get it <a href="https://docs.docker.com/compose/install/" target="_blank" class="text-accent-1">here</a>.
+<b>Only if you are using Linux:</b> You'll have to install Docker Compose seperately, get it <a href="https://docs.docker.com/compose/install/" target="_blank">here</a>.
 <br>
 Make sure Docker is properly installed by opening a Command Prompt/Terminal and running:
 
@@ -52,10 +52,10 @@ docker --version
 ## Get your environment
 <br>
 Now that you got Docker, it's time for the actual development setup.
-I prepared an environment for you <a href="https://github.com/wug-ge/php-apache-mariadb-project-base" target="_blank" class="text-accent-1">here</a>.
+I prepared an environment for you <a href="https://github.com/wug-ge/php-apache-mariadb-project-base" target="_blank">here</a>.
 If you know about git, you know what you do. If you don't: no worries!
 
-Just click this link to download it: <a href="https://github.com/wug-ge/php-apache-mariadb-project-base/archive/refs/heads/main.zip" target="_blank" class="text-accent-1">Your super cool future dev environment</a>
+Just click this link to download it: <a href="https://github.com/wug-ge/php-apache-mariadb-project-base/archive/refs/heads/main.zip" target="_blank">Your super cool future dev environment</a>
 <br><br>
 
 ## Configure your environment
@@ -85,11 +85,11 @@ docker-compose up
 
 If everything works fine, you should see a couple of progress bars and logs. You don't even have to worry about it for now, but for the future you can view the live logs of your application in this window, so don't close it! You might want to call this in your IDE's terminal actually, so you can view your logs while you code!
 
-Now go and visit <a href="http://localhost" target="_blank" class="text-accent-1">http://localhost</a> (don't forget to add your custom port in case you changed it) and you should see a friendly "Hello World!"
+Now go and visit <a href="http://localhost" target="_blank">http://localhost</a> (don't forget to add your custom port in case you changed it) and you should see a friendly "Hello World!"
 Where does this come from you might ask?
 In your project root there is a file called "index.php" in which you can now run your custom PHP code. Try it out!
 
-You can also connect to your database now, if you left everything by default try connecting to it with your favourite SQL client! (I recommend <a href="https://www.heidisql.com/" target="_blank" class="text-accent-1">HeidiSQL</a> )
+You can also connect to your database now, if you left everything by default try connecting to it with your favourite SQL client! (I recommend <a href="https://www.heidisql.com/" target="_blank">HeidiSQL</a> )
 
 Your database credentials are (if you left everything at default settings):
 Username: root
