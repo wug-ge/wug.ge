@@ -87,7 +87,7 @@ If everything works fine, you should see a couple of progress bars and logs. You
 
 Now go and visit <a href="http://localhost" target="_blank">http://localhost</a> (don't forget to add your custom port in case you changed it) and you should see a friendly "Hello World!"
 Where does this come from you might ask?
-In your project root there is a file called "index.php" in which you can now run your custom PHP code. Try it out!
+In your project root there in the directory /src/public there is a file called "index.php" in which you can now run your custom PHP code. Try it out!
 
 You can also connect to your database now, if you left everything by default try connecting to it with your favourite SQL client! (I recommend <a href="https://www.heidisql.com/" target="_blank">HeidiSQL</a> )
 
