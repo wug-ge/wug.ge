@@ -14,7 +14,7 @@ steps:
       from_secret: docker_password
   when:
     branch:
-      - main
+      - feat/api-base
 - name: publish_api
   image: plugins/docker
   file: './docker/api'
@@ -27,7 +27,7 @@ steps:
       from_secret: docker_password
   when:
     branch:
-      - main
+      - feat/api-base
 - name: deploy
   image: docker/compose
   when:
