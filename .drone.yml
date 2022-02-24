@@ -2,7 +2,7 @@ kind: pipeline
 name: default
 
 steps:
-- name: publish
+- name: publish_frontend
   image: plugins/docker
   file: './docker/frontend'
   settings:
@@ -15,7 +15,7 @@ steps:
   when:
     branch:
       - main
-- name: publish
+- name: publish_api
   image: plugins/docker
   file: './docker/api'
   settings:
