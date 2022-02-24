@@ -4,8 +4,22 @@ name: default
 steps:
 - name: publish
   image: plugins/docker
+  file: './docker/frontend'
   settings:
     repo: wugge/wug.ge
+    tags: [ "${DRONE_COMMIT_SHA:0:7}","latest" ]
+    username:
+      from_secret: docker_username
+    password:
+      from_secret: docker_password
+  when:
+    branch:
+      - main
+- name: publish
+  image: plugins/docker
+  file: './docker/api'
+  settings:
+    repo: wugge/wug.ge-api
     tags: [ "${DRONE_COMMIT_SHA:0:7}","latest" ]
     username:
       from_secret: docker_username
