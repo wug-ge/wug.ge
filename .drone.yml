@@ -12,6 +12,7 @@ steps:
     password:
       from_secret: docker_password#
     dockerfile: 'docker/frontend/Dockerfile'
+    context: '../..'
   when:
     branch:
       - feat/api-base
