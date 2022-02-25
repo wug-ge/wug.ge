@@ -12,7 +12,21 @@ services:
       - "traefik.http.routers.wugge.rule=Host(`wug.ge`)"
       - "traefik.http.services.wugge.loadbalancer.server.port=3000"
       - "traefik.http.middlewares.wugge.redirectregex.regex=^http://wug.ge/(.*)"
-      - "traefik.http.middlewares.php-apache-www-https-redirect.redirectregex.replacement=https://wug.ge/$${1}"
+      - "traefik.http.middlewares.wugge.redirectregex.replacement=https://wug.ge/$${1}"
+  api:
+    image: wugge/wug.ge-api:latest
+    container_name: wugge-api
+    restart: "unless-stopped"
+    expose:
+      - 3001
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.wugge.rule=Host(`wug.ge`) && PathPrefix(`/api`)"
+      - "traefik.http.services.wugge.loadbalancer.server.port=3001"
+      - "traefik.http.routers.api.middlewares=api"
+      - "traefik.http.middlewares.api.replacepathregex.regex=^/api/(.*)"
+      - "traefik.http.middlewares.api.replacepathregex.replacement=/$$1"
+
 networks:
   default:
     external:
