@@ -15,7 +15,7 @@ steps:
     context: 'frontend'
   when:
     branch:
-      - feat/api-base
+      - main
 - name: publish_api
   image: plugins/docker
   settings:
@@ -28,7 +28,7 @@ steps:
     dockerfile: 'docker/api/Dockerfile'
   when:
     branch:
-      - feat/api-base
+      - main
 - name: deploy
   image: docker/compose
   when:
