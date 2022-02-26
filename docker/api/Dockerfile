@@ -2,7 +2,7 @@ FROM node:14
 
 COPY . .
 
-WORKDIR /src/api
+WORKDIR /api
 
 RUN npm install
 RUN npm run build
