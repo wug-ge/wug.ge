@@ -18,7 +18,7 @@ steps:
 - name: publish_frontend
   image: plugins/docker
   settings:
-    repo: wugge/wug.ge
+    repo: wugge/wug.ge-frontend
     tags: [ "${DRONE_COMMIT_SHA:0:7}","latest" ]
     username:
       from_secret: docker_username
