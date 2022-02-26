@@ -2,6 +2,19 @@ kind: pipeline
 name: default
 
 steps:
+- name: publish_api
+  image: plugins/docker
+  settings:
+    repo: wugge/wug.ge-api
+    tags: [ "${DRONE_COMMIT_SHA:0:7}","latest" ]
+    username:
+      from_secret: docker_username
+    password:
+      from_secret: docker_password
+    dockerfile: 'docker/api/Dockerfile'
+  when:
+    branch:
+      - main
 - name: publish_frontend
   image: plugins/docker
   settings:
@@ -13,19 +26,6 @@ steps:
       from_secret: docker_password#
     dockerfile: 'docker/frontend/Dockerfile'
     context: 'frontend'
-  when:
-    branch:
-      - main
-- name: publish_api
-  image: plugins/docker
-  settings:
-    repo: wugge/wug.ge-api
-    tags: [ "${DRONE_COMMIT_SHA:0:7}","latest" ]
-    username:
-      from_secret: docker_username
-    password:
-      from_secret: docker_password
-    dockerfile: 'docker/api/Dockerfile'
   when:
     branch:
       - main
