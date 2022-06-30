@@ -42,6 +42,8 @@ steps:
       path: /var/run/docker.sock
   commands:
   - docker-compose -f docker-compose.prod.yml down && docker-compose -f docker-compose.prod.yml pull && docker-compose -f docker-compose.prod.yml up -d
+image_pull_secrets:
+- dockerconfig
 volumes:
   - name: docker_sock
     host:
