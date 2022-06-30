@@ -26,7 +26,7 @@ steps:
     username:
       from_secret: docker_username
     password:
-      from_secret: docker_password#
+      from_secret: docker_password
     dockerfile: 'docker/frontend/Dockerfile'
     context: 'frontend'
   when:
