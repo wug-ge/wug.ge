@@ -1,6 +1,9 @@
 kind: pipeline
 name: default
 
+workspace:
+  path: /data/drone
+
 steps:
 - name: publish_api
   image: plugins/docker
