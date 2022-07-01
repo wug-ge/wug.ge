@@ -23,7 +23,7 @@ services:
       - "traefik.enable=true"
       - "traefik.http.routers.wugge-api.rule=Host(`wug.ge`) && PathPrefix(`/api`)"
       - "traefik.http.services.wugge-api.loadbalancer.server.port=3001"
-      - "traefik.http.routers.wugge-api.middlewares=api"
+      - "traefik.http.routers.wugge-api.middlewares=wugge-api"
       - "traefik.http.middlewares.wugge-api.replacepathregex.regex=^/api/(.*)"
       - "traefik.http.middlewares.wugge-api.replacepathregex.replacement=/$$1"
 
