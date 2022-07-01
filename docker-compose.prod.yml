@@ -26,6 +26,8 @@ services:
       - "traefik.http.routers.wugge-api.middlewares=wugge-api"
       - "traefik.http.middlewares.wugge-api.replacepathregex.regex=^/api/(.*)"
       - "traefik.http.middlewares.wugge-api.replacepathregex.replacement=/$$1"
+    environment:
+      - "EXPRESS_PORT=3001"
 
 networks:
   default:
