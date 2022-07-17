@@ -43,7 +43,11 @@ export default {
     '@nuxt/content',
     ['nuxt-matomo', { matomoUrl: '//matomo.wug.ge/', siteId: 1}],
     '@nuxtjs/sitemap',
+    '@nuxtjs/sentry'
   ],
+  sentry: {
+    dsn: "https://6b6132e9a2bb4526b06b71d3048f284e@bugs.wug.ge/2",
+  },
   content: {
 
   },
