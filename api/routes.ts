@@ -2,7 +2,7 @@ import { DefaultController } from "./controller/DefaultController";
 
 export const Routes = [{
   method: 'get',
-  route: '/',
+  route: '',
   controller: DefaultController,
   action: 'success'
 }]
