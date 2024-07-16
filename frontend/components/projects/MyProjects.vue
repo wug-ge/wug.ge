@@ -17,7 +17,7 @@
 
         <card class="project">
           <div class="picture-wrapper">
-            <img src="@/assets/logos/docker.png" alt="Docker logo" />
+            <img src="/logos/docker.png" alt="Docker logo" />
           </div>
           <div class="text">
             Docker LAMP skeleton project for absolute beginners as an alternative for shittier LAMP setups as mentioned in the blogpost <nuxt-link to="/blog/docker-php-dev-tutorial">here</nuxt-link>.
@@ -39,21 +39,6 @@
     </div>
   </div>
 </template>
-
-<script lang="ts">
-import { Component, Vue } from 'nuxt-property-decorator'
-
-import Card from '@/components/Card.vue'
-
-@Component({
-  components: {
-    Card
-  }
-})
-export default class MyProjects extends Vue {
-
-}
-</script>
 
 <style lang="scss" scoped>
 .projects {

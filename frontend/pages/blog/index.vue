@@ -1,41 +1,13 @@
 <template>
-  <div>
-    <navigation />
-    <page-header />
-    <blog-content>
-      <div class="container p-10" v-for="(doc, i) in docs" :key="i">
-        <nuxt-link :to="`/blog/${doc.slug}`">
-          <h1 class="list-heading">{{doc.title}}</h1>
-          {{ doc.description }}
-        </nuxt-link>
-      </div>
-    </blog-content>
-    <page-footer />
-  </div>
+  <index-page-header /> <!-- purely shown to have more page height, remove if naturally more -->
+  <blog-content>
+    <ContentList path="/blog" v-slot="{ list }">
+    <div class="container p-10" v-for="article in list" :key="article._path">
+      <nuxt-link :to="article._path">
+        <h2>{{ article.title }}</h2>
+        <p>{{ article.description }}</p>
+      </nuxt-link>
+    </div>
+  </ContentList>
+  </blog-content>
 </template>
-
-
-<script lang="ts">
-import { Component, Vue } from 'nuxt-property-decorator'
-
-import Navigation from '@/components/main-page-components/Navigation.vue'
-import PageHeader from '@/components/main-page-components/PageHeader.vue'
-import BlogContent from '@/components/BlogContent.vue'
-import PageFooter from '~/components/main-page-components/PageFooter.vue'
-
-@Component({
-  components: {
-    PageHeader,
-    Navigation,
-    PageFooter,
-    BlogContent
-  },
-  async asyncData({ $content, params }) {
-    let docs = await $content(params.slug || 'blog').fetch()
-    return { docs }
-  }
-})
-export default class Blog extends Vue {
-}
-
-</script>

@@ -1,3 +1,0 @@
-#  Welcome to wug.ge friendly robots!
-
-Sitemap: https://wug.ge/sitemap.xml
