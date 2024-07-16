@@ -10,25 +10,20 @@
     </div>
     <div class="social-media rounded text-primary bg-primary absolute right-0 p-10">
       <a class="w-10" href="https://github.com/wug-ge">
-        <img class="w-10" :src="require('@/assets/logos/github.svg')" alt="Github" /> 
+        <img class="w-10" src="/logos/github.svg" alt="Github" /> 
       </a>
     </div>
   </footer>
 </template>
 
-<script lang="ts">
-import { Component, Vue } from 'nuxt-property-decorator'
+<script lang="ts" setup>
+const email = ref('')
 
-@Component({})
-export default class PageFooter extends Vue {
-  email = ''
-
-  /**
-   * Little bit of very professional protection against crawlers
-   */
-  emailClick() {
+/**
+ * Little bit of very professional protection against crawlers
+ */
+const emailClick = () => {
     this.email = `imprint` + `@` + `wug.ge`
-  }
 }
 </script>
 

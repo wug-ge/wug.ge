@@ -16,12 +16,3 @@ I'm a fresh new freelancer &amp; digital nomad from Austria having just started 
     </div>
   </div>
 </template>
-
-<script lang="ts">
-import { Component, Vue } from 'nuxt-property-decorator'
-
-@Component({})
-export default class AboutMe extends Vue {
-
-}
-</script>

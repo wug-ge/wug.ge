@@ -5,15 +5,6 @@
   </header>
 </template>
 
-<script lang="ts">
-import { Component, Vue } from 'nuxt-property-decorator'
-
-@Component({})
-export default class PageHeader extends Vue {
-
-}
-</script>
-
 <style lang="scss" scoped>
 header {
   position: relative;

@@ -13,7 +13,7 @@
         <div class="bg-primary flex justify-center items-center rounded">
           <img
             class="w-64 p-6"
-            :src="require(`~/assets/logos/jira-software.svg`)"
+            src="/logos/jira-software.svg"
             alt="Jira Software" />
         </div>
       </div>

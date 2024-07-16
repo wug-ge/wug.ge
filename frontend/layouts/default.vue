@@ -1,5 +1,7 @@
 <template>
-  <div class="bg-accent-1 text-primary p-3.5">
+  <div>
+    <navigation />
     <slot></slot>
+    <Footer />
   </div>
 </template>
