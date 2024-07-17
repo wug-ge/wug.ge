@@ -1,6 +1,11 @@
 ---
 title: "Tutorial: Docker PHP Development setup for the generation TikTok attention span users"
 description: Years after the mainstream adoption of Docker I still stumble about so many fresh beginner programmers using XAMPP or WAMP for their PHP Dev setups - and having issues with that. This tutorial is meant to show you how easy a Docker setup actually can be for your development environment and what problems it will solve.
+sitemap:
+  loc: /blog/docker-php-dev-tutorial
+  lastmod: 2024-07-17
+  changefreq: monthly
+  priority: 0.5
 ---
 
 # Tutorial: Docker PHP Development setup for the generation TikTok attention span users

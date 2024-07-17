@@ -1,6 +1,11 @@
 ---
 title: How to deploy your Nuxt.js Projects with Drone CI and Docker Compose
 description: In this short blogpost I'll explain how to deploy your Nuxt.js projects with Drone CI and Docker Compose.
+sitemap:
+  loc: /blog/drone-ci-nuxt-docker-compose
+  lastmod: 2024-07-17
+  changefreq: monthly
+  priority: 0.5
 ---
 # How to deploy your Nuxt.js Projects with Drone CI and Docker Compose
 <p>
