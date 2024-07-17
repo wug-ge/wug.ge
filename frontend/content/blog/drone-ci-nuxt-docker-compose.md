@@ -3,19 +3,20 @@ title: How to deploy your Nuxt.js Projects with Drone CI and Docker Compose
 description: In this short blogpost I'll explain how to deploy your Nuxt.js projects with Drone CI and Docker Compose.
 ---
 # How to deploy your Nuxt.js Projects with Drone CI and Docker Compose
-<br>
+<p>
 In this short blogpost I'll explain how to deploy your Nuxt.js projects with Drone CI and Docker Compose.<br>
 I assume you have a running Drone CI installation with a Docker runner.
 You can find the source code with an example project using this setup (actually it's this blog you are currently reading) here: <a href="https://github.com/wug-ge/wug.ge/">Wug.ge Github repo</a>
 <br>
 <br>
 Basically, it comes down to 2 simple steps:<br>
-
+</p>
 <br>
 
 ## Build Dockerfile & publish image
-
+<p>
 The dockerfile takes care of building the app and running it with nuxt's start job:
+</p>
 
 ```docker
 FROM node:16
@@ -34,6 +35,7 @@ EXPOSE 80
 CMD ["npm", "run", "start"]
 ```
 <br>
+<p>
 Publish the built image on Dockerhub. Don't forget to put docker_username & docker_password as secrets in your Drone CI repo settings: 
 
 ```yml
@@ -47,6 +49,7 @@ Publish the built image on Dockerhub. Don't forget to put docker_username & dock
     password:
       from_secret: docker_password
 ```
+</p>
 <br>
 
 ## Deploy the app (stop, pull & up docker-compose)
