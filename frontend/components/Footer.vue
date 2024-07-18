@@ -23,7 +23,7 @@ const email = ref('')
  * Little bit of very professional protection against crawlers
  */
 const emailClick = () => {
-    this.email = `imprint` + `@` + `wug.ge`
+    email.value = `imprint` + `@` + `wug.ge`
 }
 </script>
 
