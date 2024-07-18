@@ -1,8 +1,10 @@
+import * as dotenv from 'dotenv'
+import * as path from 'path'
 import * as express from 'express'
 import { Routes } from './routes'
 import { NextFunction, Request, Response } from "express";
-import * as dotenv from 'dotenv'
-import * as path from 'path'
+import * as bodyParser from "body-parser";
+
 
 class Server {
   constructor() {
@@ -12,6 +14,8 @@ class Server {
 
   private initiateExpress() {
     const app: express.Application = express()
+    app.use(bodyParser.json({ limit: '50MB'}));
+
 
     Routes.forEach(route => {
       (app as any)[route.method](route.route, (req: Request, res: Response, next: Function) => {

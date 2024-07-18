@@ -1,3 +1,4 @@
+import { ContactController } from "./controller/ContactController";
 import { DefaultController } from "./controller/DefaultController";
 
 export const Routes = [{
@@ -5,4 +6,9 @@ export const Routes = [{
   route: '',
   controller: DefaultController,
   action: 'success'
+}, {
+  method: 'post',
+  route: '/contact',
+  controller: ContactController,
+  action: 'saveContact'
 }]
