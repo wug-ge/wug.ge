@@ -5,7 +5,13 @@ export default defineNuxtConfig({
     pageTransition: { name: "page", mode: "out-in" },
   },
   routeRules: {
-    "/api/**": {
+    "/api/": {
+      proxy:
+        process.env.NODE_ENV === "development"
+          ? `http://localhost:3000/**`
+          : `https://wug.ge/api/**`,
+    },
+    "/api/contact/**": {
       proxy:
         process.env.NODE_ENV === "development"
           ? `http://localhost:3000/**`
