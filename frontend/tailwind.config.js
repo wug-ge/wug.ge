@@ -6,7 +6,8 @@ module.exports = {
       'accent-1': '#5577FF',
       'accent-2': '#ffa255',
       'accent-3': '#6F6D5C',
-      'accent-4': '#AFAFAF'
+      'accent-4': '#AFAFAF',
+      'error': '#FF5555',
     }
   }
 }

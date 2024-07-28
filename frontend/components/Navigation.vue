@@ -46,7 +46,6 @@
         </nuxt-link>
         <nuxt-link
           to="/blog"
-          href=""
           class="
             block
             mt-4
@@ -78,7 +77,12 @@
           "
           >Contact</a
         >
-        <contact-modal v-if="showContactModal" @close="showContactModal = false" />
+        <index-contact-modal :hidden="!showContactModal" @close="showContactModal = false">
+          <template #header>
+            Contact me
+          </template>
+          <index-contact-form />
+        </index-contact-modal>
       </div>
     </div>
   </nav>

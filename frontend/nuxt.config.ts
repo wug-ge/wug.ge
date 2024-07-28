@@ -1,12 +1,25 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
+  app: {
+    pageTransition: {
+      name: 'fade',
+      mode: 'out-in'
+    },
+  },
+  routeRules: {
+    '/api/**': { proxy: process.env.NODE_ENV === 'development' ?
+      `http://localhost:3000/**` :
+      `https://wug.ge/api/**`
+    },
+  },
   devtools: { enabled: true },
   modules: [
     "@nuxtjs/tailwindcss",
     "@nuxt/content",
     "@kgierke/nuxt-matomo",
-    "@nuxtjs/seo"
+    "@nuxtjs/seo",
+    "@nuxt/image"
   ],
   content: {
     highlight: {
