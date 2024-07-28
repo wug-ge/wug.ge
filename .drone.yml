@@ -33,7 +33,7 @@ steps:
     branch:
       - main
 - name: deploy
-  image: docker:dind
+  image: docker/compose
   when:
     branch:
       - main
