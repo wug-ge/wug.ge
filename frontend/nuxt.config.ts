@@ -1,16 +1,15 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: '2024-04-03',
+  compatibilityDate: "2024-04-03",
   app: {
-    pageTransition: {
-      name: 'fade',
-      mode: 'out-in'
-    },
+    pageTransition: { name: "page", mode: "out-in" },
   },
   routeRules: {
-    '/api/**': { proxy: process.env.NODE_ENV === 'development' ?
-      `http://localhost:3000/**` :
-      `https://wug.ge/api/**`
+    "/api/**": {
+      proxy:
+        process.env.NODE_ENV === "development"
+          ? `http://localhost:3000/**`
+          : `https://wug.ge/api/**`,
     },
   },
   devtools: { enabled: true },
@@ -19,7 +18,7 @@ export default defineNuxtConfig({
     "@nuxt/content",
     "@kgierke/nuxt-matomo",
     "@nuxtjs/seo",
-    "@nuxt/image"
+    "@nuxt/image",
   ],
   content: {
     highlight: {
@@ -30,5 +29,9 @@ export default defineNuxtConfig({
   matomo: {
     host: "https://matomo.wug.ge",
     siteId: 1,
-  }
-})
+  },
+
+  site: {
+    url: "https://wug.ge",
+  },
+});
