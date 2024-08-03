@@ -16,8 +16,11 @@
     "@nuxtjs/content": "^0.3.0",
     "@nuxtjs/seo": "^2.0.0-rc.15",
     "@nuxtjs/tailwindcss": "^6.12.1",
+    "echarts": "^5.5.1",
     "nuxt": "^3.12.3",
-    "vue": "latest"
+    "typewriter-effect": "^2.21.0",
+    "vue": "latest",
+    "vue-echarts": "^7.0.0"
   },
   "devDependencies": {
     "sass": "^1.77.8"
