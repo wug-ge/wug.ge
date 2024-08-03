@@ -8,6 +8,9 @@ module.exports = {
       'accent-3': '#6F6D5C',
       'accent-4': '#AFAFAF',
       'error': '#FF5555',
-    }
+    },
+    container: {
+      center: true,
+    },
   }
 }

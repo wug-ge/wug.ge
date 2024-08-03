@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-accent-1 text-primary p-10 flex items-center">
+  <footer class="text-accent-1 p-10 flex items-center">
     <div class="imprint">
       <h1 class="md:text-2xl text-xl">Imprint</h1>
       Ing. Daniel Wuggenig<br>
@@ -8,9 +8,9 @@
       wug.ge<br>
       <button @click="emailClick">{{email ? '' : 'Show' }} E-Mail</button>{{email ? ': ' + email : ''}}
     </div>
-    <div class="social-media rounded text-primary bg-primary absolute right-0 p-10">
+    <div class="social-media rounded-l-lg bg-accent-1 absolute right-0 p-10">
       <a class="w-10" href="https://github.com/wug-ge">
-        <img class="w-10" src="/logos/github.svg" alt="Github" /> 
+        <img class="w-14 bg-primary p-2 rounded-lg" src="/logos/github.svg" alt="Github" /> 
       </a>
     </div>
   </footer>
