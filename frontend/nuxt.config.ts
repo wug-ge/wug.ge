@@ -7,6 +7,7 @@ export default defineNuxtConfig({
 
   build: {
     transpile: [
+      'tslib', // https://github.com/nuxt/nuxt/discussions/21533#discussioncomment-6204075
       /echarts/,
       "vue-echarts",
       "resize-detector", // needed for echarts, see https://github.com/nuxt/nuxt/issues/14553#issuecomment-1934042981
