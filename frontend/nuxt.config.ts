@@ -14,8 +14,8 @@ export default defineNuxtConfig({
     "/api/contact/**": {
       proxy:
         process.env.NODE_ENV === "development"
-          ? `http://localhost:3000/**`
-          : `https://wug.ge/api/**`,
+          ? `http://localhost:3000/contact/**`
+          : `https://wug.ge/api/contact/**`,
     },
   },
   devtools: { enabled: true },
