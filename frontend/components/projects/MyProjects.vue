@@ -1,9 +1,9 @@
 <template>
-  <div class="bg-accent-2 text-primary justify-center items-center flex text-center p-3.5">
+  <div class="bg-slight-grey text-accent-1 justify-center items-center flex text-center p-3.5">
     <div>
-      <h1 class="md:text-5xl text-3xl">My Projects</h1>
+      <h1 class="md:text-5xl text-3xl font-light">my projects</h1>
       <br />
-      <div class="projects container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="projects font-light container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         <card class="project">
           <div class="picture-wrapper">
             <img src="@/assets/img/website.png" alt="Picture of website" />

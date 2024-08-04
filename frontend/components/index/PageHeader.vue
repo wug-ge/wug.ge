@@ -1,11 +1,11 @@
 <template>
   <header class="container bg-white grid grid-cols-6 py-16 items-center">
     <img
-      class="col-span-2 w-64 mx-auto md:mb-0 mb-4 rounded"
+      class="col-span-6 md:col-span-2 w-64 mx-auto md:mb-0 mb-4 rounded-xl"
       src="~/assets/img/profile.jpg"
       alt="Profile Picture" />
-    <div class="text-accent-1 col-span-4 text-5xl md:text-5xl text-center">
-      <h1 class="">Hey, I'm Wugge and I'm a </h1>
+    <div class="text-accent-1 col-span-6 md:col-span-4 text-3xl md:text-5xl text-center">
+      <h1 class="font-light">Hey, I'm Wugge and I'm a </h1>
       <h1 id="typewriter"></h1>
     </div>
   </header>

@@ -1,6 +1,6 @@
 <template>
   <div
-    class="blog-content bg-accent-2 text-primary flex justify-center items-center"
+    class="blog-content bg-slight-grey text-accent-1 font-light flex justify-center items-center"
   >
     <div class="container pt-20 pb-20 lg:p-20 md:p-10 p-4 text-xl">
       <slot></slot>
@@ -13,7 +13,7 @@
   a {
     @apply text-accent-1;
     h2, p {
-      @apply text-primary;
+      @apply text-accent-1;
     }
   }
   h1,
@@ -23,13 +23,13 @@
   h5,
   h6 {
     a {
-      @apply text-primary no-underline;
+      @apply text-accent-1 no-underline;
     }
   }
   h1 {
-    @apply text-4xl text-primary;
+    @apply text-4xl text-accent-1;
     &:not(.list-heading) {
-      @apply text-5xl text-primary;
+      @apply text-5xl text-accent-1;
     }
   }
   h2 {

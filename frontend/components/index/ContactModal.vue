@@ -9,10 +9,10 @@
     <div class="relative w-full max-w-2xl mt-[30vh]">
       <div @click="emit('close')" class="cursor-pointer absolute z-40 right-2 top-0 text-white text-2xl">x</div>
       <!-- Modal content -->
-      <div class="relative bg-accent-1 shadow text-red">
+      <div class="relative bg-slight-grey shadow text-red">
         <!-- Modal header -->
         <div v-if="$slots.header" class="flex justify-center items-center p-4  dark:border-gray-600">
-          <h3 class="text-xl font-semibold">
+          <h3 class="text-xl font-light">
             <slot name="header"></slot>
           </h3>
 
