@@ -6,6 +6,17 @@
       <div class="projects font-light container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         <card class="project">
           <div class="picture-wrapper">
+            <img src="@/assets/img/bpm.png" alt="Picture of Battery Price Monitor" />
+          </div>
+          <div class="text">
+            Battery Price Monitor / Finder
+            A simple web application to monitor and find the best prices and other metrics for batteries. Scrapes data from various sources and displays it in a nice way.
+            <a href="https://bpm.wug.ge">Check it out!</a>
+          </div>
+        </card>
+
+        <card class="project">
+          <div class="picture-wrapper">
             <img src="@/assets/img/website.png" alt="Picture of website" />
           </div>
           <div class="text">

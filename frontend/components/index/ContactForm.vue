@@ -1,7 +1,7 @@
 <template>
   <form @submit="submit">
-    <wug-input :error="emailError" type="text" placeholder="your E-mail" name="email" v-model="email" />
-    <wug-input :error="messageError" :textarea="true" type="text" placeholder="your Message" name="message" v-model="message" />
+    <wug-input :error="emailError" type="text" placeholder="your e-mail" name="email" v-model="email" />
+    <wug-input :error="messageError" :textarea="true" type="text" placeholder="your message" name="message" v-model="message" />
     <button type="submit" class="bg-accent-2 text-primary p-2 rounded font-light" @click="submit">Submit</button>
     
     <div v-if="sendError || sendSuccess" class="bg-primary p-2 rounded mt-2">
