@@ -1,9 +1,9 @@
 <template>
   <div
-    class="bg-accent-2 text-accent-1 justify-center items-center flex text-center p-3.5"
+    class="bg-slight-grey text-accent-1 justify-center items-center flex text-center p-3.5"
   >
     <div class="container">
-      <h1 class="md:text-5xl text-3xl bg-primary rounded py-4 px-4 inline-block text-center">My Tech Stack</h1>
+      <h1 class="md:text-5xl text-3xl r rounded py-4 px-4 inline-block text-center font-light">my tech stack</h1>
 
       <!-- <client-only> -->
       <!-- <v-chart class="h-[100vh] w-full" :option="option" autoresize /> -->

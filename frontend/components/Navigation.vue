@@ -79,7 +79,7 @@
         >
         <index-contact-modal :hidden="!showContactModal" @close="showContactModal = false">
           <template #header>
-            Contact me
+            contact me
           </template>
           <index-contact-form />
         </index-contact-modal>

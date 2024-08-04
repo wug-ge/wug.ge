@@ -15,7 +15,7 @@
       :value="modelValue"
       @input="emitInput"
     />
-    <label :class="{ 'input-has-value': modelValue.length }" class="absolute top-3 left-2 transition-all">{{ props.placeholder }}</label>
+    <label :class="{ 'input-has-value': modelValue.length }" class="absolute top-3 left-2 transition-all font-light">{{ props.placeholder }}</label>
     <span class="absolute w-full left-1 bottom-0 !text-error text-sm">{{ error }}</span>
   </div>
 </template>
