@@ -9,7 +9,7 @@ module.exports = {
       'accent-4': '#AFAFAF',
       'error': '#FF5555',
 
-      'slight-grey': '#e7e7e7',
+      'slight-grey': '#f0f0f0',
     },
     container: {
       center: true,
