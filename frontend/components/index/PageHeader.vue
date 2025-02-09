@@ -1,6 +1,6 @@
 <template>
   <header class="container bg-white grid grid-cols-6 py-16 items-center relative overflow-hidden">
-    <img class="col-span-6 md:col-span-2 w-64 mx-auto md:mb-0 mb-4 rounded-xl" src="~/assets/img/profile.jpg"
+    <img class="z-10 col-span-6 md:col-span-2 w-64 mx-auto md:mb-0 mb-4 rounded-xl" src="~/assets/img/profile.jpg"
       alt="Profile Picture" />
     <div class="text-accent-1 col-span-6 md:col-span-4 text-3xl md:text-5xl text-center relative">
       <ClientOnly>
