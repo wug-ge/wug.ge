@@ -22,7 +22,7 @@ services:
       - 3001
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.wugge-api.rule=Host(`wug.ge`) && (Path(`/api/`) || PathPrefix(`/api/contact/**`))"
+      - "traefik.http.routers.wugge-api.rule=Host(`wug.ge`) && (Path(`/api/`) || PathPrefix(`/api/contact`))"
       - "traefik.http.services.wugge-api.loadbalancer.server.port=3001"
       - "traefik.http.routers.wugge-api.middlewares=wugge-api"
       - "traefik.http.middlewares.wugge-api.replacepathregex.regex=^/api/(.*)"
