@@ -13,6 +13,7 @@ services:
       - "traefik.http.services.wugge-frontend.loadbalancer.server.port=3000"
       - "traefik.http.routers.wugge-frontend.entrypoints=websecure"
       - "traefik.http.routers.wugge-frontend.tls=true"
+      - "traefik.docker.network=wugge"
   wugge-api:
     image: wugge/wug.ge-api:latest
     container_name: wugge-api
@@ -28,6 +29,7 @@ services:
       - "traefik.http.middlewares.wugge-api.replacepathregex.replacement=/$$1"
       - "traefik.http.routers.wugge-api.tls=true"
       - "traefik.http.routers.wugge-api.entrypoints=websecure"
+      - "traefik.docker.network=wugge"
 
     environment:
       - "EXPRESS_PORT=3001"
