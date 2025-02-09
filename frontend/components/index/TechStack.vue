@@ -9,16 +9,13 @@
       <!-- <v-chart class="h-[100vh] w-full" :option="option" autoresize /> -->
       <!-- </client-only> -->
       <div class="grid grid-cols-6">
-        <div class=" h-96 col-span-6 md:col-span-3">
+        <div class=" h-96 col-span-6 md:col-span-2">
           <index-tech-stack-backend class="h-96" />
         </div>
-        <div class=" h-96 col-span-6 md:col-span-3">
+        <div class=" h-96 col-span-6 md:col-span-2">
           <index-tech-stack-frontend />
         </div>
         <div class="h-96 col-span-6 md:col-span-2">
-          <index-tech-stack-databases class="h-96" />
-        </div>
-        <div class="h-96 col-span-6 md:col-span-4">
           <index-tech-stack-dev-ops class="h-96" />
         </div>
       </div>
