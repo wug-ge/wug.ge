@@ -58,7 +58,7 @@
         </nuxt-link>
       </div>
       <div>
-        <a
+        <!--<a
           href="#"
           @click="showContactModal = true"
           class="
@@ -76,7 +76,8 @@
             md:mt-0
           "
           >Contact</a
-        >
+        >-->
+        <gradient-button :border-width="1" bg-color="#fff" @click="showContactModal = true">Contact</gradient-button>
         <index-contact-modal :hidden="!showContactModal" @close="showContactModal = false">
           <template #header>
             contact me
