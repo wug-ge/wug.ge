@@ -34,6 +34,8 @@ services:
     environment:
       EXPRESS_PORT: 3001
       CONTACT_EMAIL: ${CONTACT_EMAIL}
+      GMAIL_USER: ${GMAIL_USER}
+      GMAIL_PASS: ${GMAIL_PASS}
 
 networks:
   default:
