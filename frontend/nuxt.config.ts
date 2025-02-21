@@ -35,6 +35,7 @@ export default defineNuxtConfig({
     "@kgierke/nuxt-matomo",
     "@nuxtjs/seo",
     "@nuxt/image",
+    "nuxt-site-config"
   ],
   content: {
     highlight: {
