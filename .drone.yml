@@ -58,6 +58,12 @@ steps:
       from_secret: docker_username
     DOCKER_PASSWORD:
       from_secret: docker_password
+    CONTACT_EMAIL:
+      from_secret: CONTACT_EMAIL
+    GMAIL_USER:
+      from_secret: GMAIL_USER
+    GMAIL_PASS:
+      from_secret: GMAIL_PASS
   commands:
   - echo "$DOCKER_PASSWORD" | docker login --username $DOCKER_USERNAME --password-stdin
   - docker-compose -f docker-compose.prod.yml down && docker-compose -f docker-compose.prod.yml pull && docker-compose -f docker-compose.prod.yml up -d
