@@ -32,7 +32,8 @@ services:
       - "traefik.docker.network=wugge"
 
     environment:
-      - "EXPRESS_PORT=3001"
+      EXPRESS_PORT: 3001
+      CONTACT_EMAIL: ${CONTACT_EMAIL}
 
 networks:
   default:
