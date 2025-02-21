@@ -25,6 +25,8 @@ steps:
   when:
     branch:
       - main
+    event:
+      - push
 - name: publish_frontend
   image: plugins/docker
   settings:
@@ -39,11 +41,15 @@ steps:
   when:
     branch:
       - main
+    event:
+      - push
 - name: deploy
   image: docker/compose
   when:
     branch:
       - main
+    event:
+      - push
   volumes:
     - name: docker_sock
       path: /var/run/docker.sock
