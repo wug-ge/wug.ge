@@ -13,7 +13,10 @@ export class ContactController {
 
       const emailBody = `Email: ${email}\n\nMessage: ${message}`;
 
-      await sendEmail(recipientEmail, `Website Contact`, emailBody);
+      const { success, error } = await sendEmail(`Website Contact`, emailBody);
+      if (!success) {
+        throw new Error(error);
+      }
       res.json({success: true});
     } catch (error) {
       console.error('Error sending email:', error);
