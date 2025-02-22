@@ -77,7 +77,7 @@
           "
           >Contact</a
         >-->
-        <gradient-button :border-width="1" bg-color="#fff" @click="showContactModal = true">Contact</gradient-button>
+        <gradient-button class="contact-modal-open" :border-width="1" bg-color="#fff" @click="showContactModal = true">Contact</gradient-button>
         <index-contact-modal :hidden="!showContactModal" @close="showContactModal = false">
           <template #header>
             contact me
