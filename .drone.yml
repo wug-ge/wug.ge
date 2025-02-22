@@ -40,6 +40,7 @@ steps:
 - name: run_tests
   image: node:22
   commands:
+    - cd frontend
     - npm install
     - npx vitest run
   when:
