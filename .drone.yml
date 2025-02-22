@@ -36,6 +36,18 @@ steps:
       - main
     event:
       - push
+
+- name: run_tests
+  image: node:22
+  commands:
+    - npm install
+    - npx vitest run
+  when:
+    branch:
+      - main
+    event:
+      - pull_request
+
 - name: deploy
   image: docker/compose
   when:
