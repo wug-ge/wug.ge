@@ -43,8 +43,6 @@ steps:
     - npm install
     - npx vitest run
   when:
-    branch:
-      - main
     event:
       - pull_request
 
