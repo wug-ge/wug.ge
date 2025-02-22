@@ -4,6 +4,7 @@ export default defineNuxtConfig({
   app: {
     pageTransition: { name: "page", mode: "out-in" },
   },
+  ssr: true,
 
   build: {
     transpile: [
@@ -35,7 +36,8 @@ export default defineNuxtConfig({
     "@kgierke/nuxt-matomo",
     "@nuxtjs/seo",
     "@nuxt/image",
-    "nuxt-site-config"
+    "nuxt-site-config",
+    "@nuxt/test-utils/module",
   ],
   content: {
     highlight: {
