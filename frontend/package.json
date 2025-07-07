@@ -11,11 +11,12 @@
   },
   "dependencies": {
     "@kgierke/nuxt-matomo": "^0.0.3",
-    "@nuxt/content": "^2.13.1",
+    "@nuxt/content": "^3.6.3",
     "@nuxt/image": "^1.10.0",
     "@nuxtjs/seo": "^3.1.0",
     "@nuxtjs/tailwindcss": "^6.12.1",
     "@vueuse/core": "^12.5.0",
+    "better-sqlite3": "^12.2.0",
     "echarts": "^5.5.1",
     "motion-v": "^1.0.0",
     "nuxt": "^3.17.6",
@@ -26,7 +27,7 @@
   },
   "devDependencies": {
     "@inspira-ui/plugins": "^0.0.1",
-    "@nuxt/test-utils": "^3.17.0",
+    "@nuxt/test-utils": "^3.19.2",
     "@vue/test-utils": "^2.4.6",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
