@@ -1,20 +1,34 @@
 <template>
   <div>
-    <index-page-header />
+    <IndexPageHeader />
     <!-- purely shown to have more page height, remove if naturally more -->
-    <blog-content>
-      <ContentList path="/blog" v-slot="{ list }">
-        <div
-          class="container p-10"
-          v-for="article in list"
-          :key="article._path"
-        >
-          <nuxt-link :to="article._path">
-            <h2>{{ article.title }}</h2>
-            <p>{{ article.description }}</p>
-          </nuxt-link>
-        </div>
-      </ContentList>
-    </blog-content>
+    <BlogContent v-if="articles && articles.length > 0">
+      <div
+        class="container p-10"
+        v-for="article in articles[0].children"
+        :key="article.path"
+      >
+        <NuxtLink :to="article.path">
+          <h2>{{ article.title }}</h2>
+          <p>{{ article.description }}</p>
+        </NuxtLink>
+      </div>
+    </BlogContent>
   </div>
 </template>
+
+<script setup lang="ts">
+interface Article {
+  path: string
+  title: string
+  description?: string
+  [key: string]: any
+}
+
+const { data: articles } = await useAsyncData('blog-list', () =>
+  queryCollectionNavigation('content', [ 'description' ])
+)
+
+// console.log(JSON.stringify(articles.value))
+
+</script>
