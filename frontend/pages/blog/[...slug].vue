@@ -1,11 +1,3 @@
-<script setup lang="ts">
-import { useRoute } from 'vue-router'
-const route = useRoute()
-const { data: page } = await useAsyncData(route.path, () =>
-  queryCollection('content').path(route.path).first()
-)
-</script>
-
 <template>
   <div>
     <index-page-header />
@@ -14,3 +6,17 @@ const { data: page } = await useAsyncData(route.path, () =>
     </blog-content>
   </div>
 </template>
+
+<script setup lang="ts">
+import { useRoute } from 'vue-router'
+const route = useRoute()
+const { data: page } = await useAsyncData(route.path, () =>
+  queryCollection('content').path(route.path).first()
+)
+</script>
+
+<style lang="scss">
+a.blog-link {
+  @apply text-clip !text-error;
+}
+</style>

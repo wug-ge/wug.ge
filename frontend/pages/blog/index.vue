@@ -5,7 +5,7 @@
     <BlogContent v-if="articles && articles.length > 0">
       <div
         class="container p-10"
-        v-for="article in articles[0].children"
+        v-for="article in articles[0].children?.reverse()"
         :key="article.path"
       >
         <NuxtLink :to="article.path">
