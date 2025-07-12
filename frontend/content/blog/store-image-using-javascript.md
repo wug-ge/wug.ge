@@ -1,6 +1,6 @@
 ---
 title: "How to store an image using JavaScript? (Nuxt and Express)?"
-description: "A friend of mine got this interview question recently. I thought it's actually a really good question, especially for especially for senior developers. What is the proper way to save an image with Nuxt and Express?"
+description: "A friend of mine got this interview question recently. I thought it's actually a really good question, especially for senior developers. What is the proper way to save an image with Nuxt and Express?"
 ---
 
 # How to store an image using JavaScript?
