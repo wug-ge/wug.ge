@@ -19,7 +19,7 @@
     "better-sqlite3": "^12.2.0",
     "echarts": "^5.5.1",
     "motion-v": "^1.0.0",
-    "nuxt": "^3.17.6",
+    "nuxt": "^4.0.0",
     "nuxt-site-config": "^3.1.0",
     "typewriter-effect": "^2.21.0",
     "vue": "latest",

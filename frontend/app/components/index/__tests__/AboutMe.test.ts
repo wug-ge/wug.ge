@@ -1,7 +1,7 @@
-import MyComponent from '../AboutMe.vue';
+import MyComponent from '../../../../components/index/AboutMe.vue';
 import { mountSuspended } from '@nuxt/test-utils/runtime'
 import { describe, it, expect } from 'vitest';
-import AboutMe from '../AboutMe.vue';
+import AboutMe from '../../../../components/index/AboutMe.vue';
 
 describe('AboutMe', () => {
   it('renders correctly', async() => {
