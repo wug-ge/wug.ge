@@ -26,7 +26,7 @@ interface Article {
 }
 
 const { data: articles } = await useAsyncData('blog-list', () =>
-  queryCollectionNavigation('content', [ 'description' ])
+  queryCollectionNavigation('content', [ 'description', 'date' ]).order('date', 'DESC')
 )
 
 const reverseArticles = computed(() => {
