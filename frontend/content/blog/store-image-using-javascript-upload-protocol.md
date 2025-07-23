@@ -1,10 +1,11 @@
 ---
-title: "How to store an image using JavaScript? (Nuxt and Express)?"
+title: "How to upload an image using JavaScript? (Nuxt and Express)?"
 description: "A friend of mine got this interview question recently. I thought it's actually a really good question, especially for senior developers. What is the proper way to save an image with Nuxt and Express?"
+date: '2025-07-12'
 ---
 
-# How to store an image using JavaScript?
-## Part 1: The Protocol (with Nuxt and Express example)
+# How to upload an image using JavaScript?
+## Part 1: The upload protocol (with Nuxt and Express example)
 
 <br>
 <p>A friend of mine went to a job interview as a web developer recently. One of the questions he got was "How do you save an image?"<br>
@@ -79,4 +80,7 @@ In my opinion: Use multipart if you don't have to chunk or upload large files. U
 </client-only>
 
 <br>
-Now that we've solved the protocol question, in the next part, we'll discover how to save an image on the server side, compress it properly,... (WIP, Part 2 not yet published, will be linked here once finished)
+Now that we've solved the protocol question, in the next part, we'll discover how to save an image on the server side, compress it properly,...
+<br>
+<a href="/blog/save-image-using-javascript-storing" class="blog-link">Click here for Part 2</a> 
+<br>

@@ -6,6 +6,7 @@ sitemap:
   lastmod: 2024-07-17
   changefreq: monthly
   priority: 0.5
+date: '17-07-2024'
 ---
 # How to deploy your Nuxt.js Projects with Drone CI and Docker Compose
 <p>
