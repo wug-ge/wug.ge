@@ -5,7 +5,7 @@
     <BlogContent v-if="articles && articles.length > 0">
       <div
         class="container p-10"
-        v-for="article in reverseArticles"
+        v-for="article in articles[0]?.children"
         :key="article.path"
       >
         <NuxtLink :to="article.path">
@@ -28,10 +28,5 @@ interface Article {
 const { data: articles } = await useAsyncData('blog-list', () =>
   queryCollectionNavigation('content', [ 'description', 'date' ]).order('date', 'DESC')
 )
-
-const reverseArticles = computed(() => {
-  if (!articles.value) return []
-  return articles.value[0].children?.reverse() as Article[]
-})
 
 </script>
