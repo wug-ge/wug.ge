@@ -23,7 +23,7 @@
     "nuxt-site-config": "^3.1.0",
     "typewriter-effect": "^2.21.0",
     "vue": "latest",
-    "vue-echarts": "^7.0.0"
+    "vue-echarts": "^8.0.0"
   },
   "devDependencies": {
     "@inspira-ui/plugins": "^0.0.1",
