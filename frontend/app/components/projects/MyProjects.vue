@@ -6,6 +6,29 @@
       <div class="projects font-light container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         <card class="project">
           <div class="picture-wrapper">
+            <img src="@/assets/img/gymeesti.png" alt="Picture of GymEesti Occupancy" />
+          </div>
+          <div class="text">
+            GymEesti Occupancy Tracker
+            A simple web application to track the occupancy of gyms in Estonia using their API. Built with Nuxt.js and Tailwind CSS.
+            <a href="https://gymeesti-occupancy.wug.ge">Check it out!</a>
+          </div>
+        </card>
+        
+        <card class="project">
+          <div class="picture-wrapper">
+            <img src="@/assets/img/express-redis-middleware.png" alt="Picture of GymEesti Occupancy" />
+          </div>
+          <div class="text">
+            Express Redis Simple Cache
+            A simple and effective Redis-based caching middleware for Express.js APIs.
+            <a href="https://github.com/wug-ge/express-redis-simple-cache">Check it out!</a>
+          </div>
+        </card>
+
+
+        <card class="project">
+          <div class="picture-wrapper">
             <img src="@/assets/img/bpm.png" alt="Picture of Battery Price Monitor" />
           </div>
           <div class="text">
