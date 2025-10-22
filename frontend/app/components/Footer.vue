@@ -7,6 +7,9 @@
       9761 Greifenburg<br>
       wug.ge<br>
       <button @click="emailClick">{{email ? '' : 'Show' }} E-Mail</button>{{email ? ': ' + email : ''}}
+      <br><br>
+      <a href="/privacy-policy">Privacy Policy</a><br>
+
     </div>
     <div class="social-media rounded-l-lg bg-accent-1 absolute right-0 p-10">
       <a class="w-10" href="https://github.com/wug-ge">
