@@ -38,7 +38,7 @@ steps:
       - push
 
 - name: run_tests
-  image: node:22
+  image: node:24
   commands:
     - cd frontend
     - npm install
