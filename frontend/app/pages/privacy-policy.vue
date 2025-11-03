@@ -23,16 +23,16 @@
       <li>No data is shared with external services</li>
     </ul>
 
-    <p class="mt-4">
+    <!--<p class="mt-4">
       If you wish to opt out of analytics tracking, you can do so below:
-    </p>
+    </p>-->
 
     <!-- Matomo opt-out iframe (optional) -->
-    <div class="mt-4">
-      <iframe
-        src="https://matomo.com/matomo/index.php?module=CoreAdminHome&action=optOut&language=en"
-        class="w-full h-52 border-0 rounded-lg shadow-sm"
-      ></iframe>
-    </div>
+    <!-- <div class="mt-4"> -->
+      <!-- <iframe -->
+        <!-- src="https://matomo.com/matomo/index.php?module=CoreAdminHome&action=optOut&language=en" -->
+        <!-- class="w-full h-52 border-0 rounded-lg shadow-sm" -->
+      <!-- ></iframe> -->
+    <!-- </div> -->
   </section>
 </template>
