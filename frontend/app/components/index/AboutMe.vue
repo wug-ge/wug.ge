@@ -11,7 +11,7 @@
             alt="Profile Picture" />
         </div>
         <div class="text-xl ml-6 md:w-4/12 md:mb-0 mb-4 font-light">
-          I'm a freelance web developer from Austria with almost a decade of experience in creating web applications and managing teams and projects.</div>
+          I'm a freelance web developer originally born in Austria living in Estonia with almost a decade of experience in creating web applications and managing teams and projects.</div>
       </div>
     </div>
   </div>

@@ -2,13 +2,13 @@
   <footer class="text-accent-1 p-10 flex items-center">
     <div class="imprint">
       <h1 class="md:text-2xl text-xl">Imprint</h1>
-      Ing. Daniel Wuggenig<br>
-      Gnoppnitz 7<br>
-      9761 Greifenburg<br>
-      wug.ge<br>
-      <button @click="emailClick">{{email ? '' : 'Show' }} E-Mail</button>{{email ? ': ' + email : ''}}
-      <br><br>
-      <a href="/privacy-policy">Privacy Policy</a><br>
+      Wugge OÜ<br>
+      Aiandi Tn 9/1-13<br>
+      12915 Tallinn<br>
+      Estonia<br>
+      <button class="underline" @click="emailClick">{{email ? '' : 'Show' }} E-Mail</button>{{email ? ': ' + email : ''}}
+      <br>
+      <a class="underline" href="/privacy-policy">Privacy Policy</a><br>
 
     </div>
     <div class="social-media rounded-l-lg bg-accent-1 absolute right-0 p-10">
