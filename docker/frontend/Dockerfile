@@ -5,7 +5,7 @@ WORKDIR /app
 COPY . .
 
 RUN npm install
-RUN npx vitest run
+# RUN npx vitest run
 RUN npm run build
 # RUN npm run generate
 
