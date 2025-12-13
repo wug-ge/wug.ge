@@ -2,7 +2,7 @@ import posthog from 'posthog-js'
 
 export default defineNuxtPlugin((nuxtApp) => {
   // 1) Init PostHog in a safe mode first (no cookies until consent)
-  posthog.init(useRuntimeConfig().public.posthogKey, {
+  posthog.init(useRuntimeConfig().public.posthogPublicKey, {
     api_host: useRuntimeConfig().public.posthogHost,
     // recommended: keep pageview manual so you can gate it
     capture_pageview: false,
