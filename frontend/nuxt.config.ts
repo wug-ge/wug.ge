@@ -30,6 +30,9 @@ export default defineNuxtConfig({
     },
   },
   devtools: { enabled: true },
+  plugins: [
+    '~/plugins/posthog.client.ts',
+  ],
   modules: [
     "@nuxtjs/tailwindcss",
     "@nuxt/content",
@@ -38,6 +41,7 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "nuxt-site-config",
     "@nuxt/test-utils/module",
+    '@weareheavy/nuxt-cookie-consent',
   ],
   content: {
     highlight: {
@@ -53,4 +57,35 @@ export default defineNuxtConfig({
   site: {
     url: "https://wug.ge",
   },
+
+  cookieConsent: {
+    provider: 'cookiescript',
+    id: 'f43799a89a205c007fa28efbfbd17fe0',
+    cookieName: 'cookie_consent',
+
+    dev: true,
+    init: true,
+    categories: {
+      necessary: {
+        enabled: true,
+        readOnly: true
+      },
+      analytics: {
+        enabled: false
+      }
+    },
+
+    // optional but recommended
+    showBanner: true,
+    showDeclineButton: true
+  },
+
+
+  runtimeConfig: {
+    public: {
+      posthogPublicKey: 'phc_vBVCiZIOGwtxjuic6gYHMBw9PU6bYWHJBpX7utqegqr',
+      posthogHost: 'https://eu.i.posthog.com',
+      posthogDefaults: '2025-11-30'
+    }
+  }
 });
