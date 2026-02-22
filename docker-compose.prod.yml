@@ -43,4 +43,4 @@ networks:
   default:
     external:
       name:
-        wugge
+        traefik_proxy
