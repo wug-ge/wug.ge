@@ -48,7 +48,7 @@ steps:
       - pull_request
 
 - name: deploy
-  image: docker/compose
+  image: docker:29-cli
   when:
     branch:
       - main
